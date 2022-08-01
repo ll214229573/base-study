@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>seal</title>
+</head>
+
+<body>
+
+</body>
+
+</html>
+
+<script>
+    "use strict"
+    const obj = {
+        a: 100,
+        b: 'hello'
+    }
+    Object.seal(obj)
+    console.log(Object.isSealed(obj));
+    delete obj.a
+    // Object.defineProperty(obj, 't', {
+    //     value: 100
+    // })
+    console.log(obj);
+</script>
